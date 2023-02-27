@@ -1,0 +1,56 @@
+{
+  "name": "conditional-resolution-package",
+  "version": "0.1.0",
+  "description": "Package to ensure the correct resolution occurs.",
+  "homepage": "https://github.com/bevry/daet",
+  "license": "MIT",
+  "keywords": [],
+  "author": "2019+ Benjamin Lupton <b@lupton.cc> (https://balupton.com)",
+  "maintainers": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "contributors": [
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+  ],
+  "bugs": {
+    "url": "https://github.com/bevry/daet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bevry/daet.git"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "exports": {
+    "workerd": {
+      "import": "./workerd.mjs",
+      "require": "./workerd.cjs"
+    },
+    "node": {
+      "import": "./node.mjs",
+      "require": "./node.cjs"
+    },
+    "browser": {
+      "import": "./browser.mjs",
+      "require": "./browser.cjs"
+    },
+    "default": {
+      "import": "./default.mjs",
+      "require": "./default.cjs"
+    },
+    "import": "./default.mjs",
+    "require": "./default.cjs"
+  },
+  "type": "module",
+  "module": "default.mjs",
+  "browser": "browser.mjs",
+  "main": "default.cjs",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}

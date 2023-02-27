@@ -1,0 +1,24 @@
+{
+  "name": "astro-cfpages-esbuild-resolution-bug",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "wrangler pages dev ./public"
+  },
+  "dependencies": {
+    "conditional-resolution-package": "./conditional-resolution-package"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230221.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wrangler": "^2.11.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
